@@ -12,7 +12,7 @@ import {StackNavigator} from './presentation/routes/StackNavigator';
 function App(): React.JSX.Element {
   return (
     <NavigationContainer>
-      <Text>Test</Text>
+      <StackNavigator />
     </NavigationContainer>
   );
 }
