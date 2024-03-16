@@ -15,7 +15,6 @@ export const gs = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    gap: 20,
     backgroundColor: colors.background,
   },
 
