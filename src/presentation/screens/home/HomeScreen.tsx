@@ -1,11 +1,11 @@
 import {FC} from 'react';
 import {StyleSheet, View} from 'react-native';
 import {gs} from '../../theme';
-import {useNavigation} from '@react-navigation/native';
 import {PrimaryButton} from '../../components/shared/PrimaryButton';
+import {useAppNavigation} from '../../hooks/shared/useAppNavigation';
 
 export const HomeScreen: FC = () => {
-  const navigation = useNavigation();
+  const {navigate} = useAppNavigation();
 
   return (
     <View
@@ -13,11 +13,11 @@ export const HomeScreen: FC = () => {
         ...gs.container,
         ...s.container,
       }}>
-      <PrimaryButton onPress={() => navigation.navigate('Products' as never)}>
+      <PrimaryButton onPress={() => navigate('Products')}>
         Products
       </PrimaryButton>
 
-      <PrimaryButton onPress={() => navigation.navigate('Settings' as never)}>
+      <PrimaryButton onPress={() => navigate('Settings')}>
         Settings
       </PrimaryButton>
     </View>
