@@ -3,7 +3,7 @@ import {Pressable, StyleProp, Text, ViewStyle} from 'react-native';
 import {gs} from '../../theme';
 
 type Props = ComponentProps<typeof Pressable> & {
-  style: StyleProp<ViewStyle>;
+  style?: StyleProp<ViewStyle>;
 };
 
 export const PrimaryButton: FC<Props> = ({style, ...props}) => {
