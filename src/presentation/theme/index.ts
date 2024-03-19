@@ -34,4 +34,9 @@ export const gs = StyleSheet.create({
     color: colors.background,
     fontSize: 18,
   },
+
+  h2: {
+    fontSize: 30,
+    marginBottom: 10,
+  },
 });
