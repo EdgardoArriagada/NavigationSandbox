@@ -8,13 +8,11 @@ import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import {DrawerNavigator} from './presentation/routes/DrawerNavigator';
-import {BottomTabsNavigator} from './presentation/routes/BottomTabsNavigator';
 
 function App(): React.JSX.Element {
   return (
     <NavigationContainer>
-      {/* <DrawerNavigator /> */}
-      <BottomTabsNavigator />
+      <DrawerNavigator />
     </NavigationContainer>
   );
 }

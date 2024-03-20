@@ -2,6 +2,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {StackNavigator} from './StackNavigator';
 import {ProfileScreen} from '../screens/profile/ProfileScreen';
 import {colors} from '../theme';
+import { BottomTabsNavigator } from './BottomTabsNavigator';
 
 export type RootDrawerParamList = {
   Home: undefined;
@@ -27,7 +28,7 @@ export const DrawerNavigator = () => {
         /*   marginVertical: 10, */
         /* }, */
       }}>
-      <Drawer.Screen name="StackNavigator" component={StackNavigator} />
+      <Drawer.Screen name="Tabs" component={BottomTabsNavigator} />
       <Drawer.Screen name="Profile" component={ProfileScreen} />
     </Drawer.Navigator>
   );
