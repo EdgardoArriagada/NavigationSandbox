@@ -3,6 +3,7 @@ import {Tab1Screen} from '../screens/tabs/Tab1Screen';
 import {Tab2Screen} from '../screens/tabs/Tab2Screen';
 import {Tab3Screen} from '../screens/tabs/Tab3Screen';
 import {colors} from '../theme';
+import {TopTabsNavigator} from './TopTabsNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -31,12 +32,12 @@ export function BottomTabsNavigator() {
       />
       <Tab.Screen
         name="Tab2"
-        options={{title: 'tab 1'}}
-        component={Tab2Screen}
+        options={{title: 'tab 2'}}
+        component={TopTabsNavigator}
       />
       <Tab.Screen
         name="Tab3"
-        options={{title: 'tab 1'}}
+        options={{title: 'tab 2'}}
         component={Tab3Screen}
       />
     </Tab.Navigator>
