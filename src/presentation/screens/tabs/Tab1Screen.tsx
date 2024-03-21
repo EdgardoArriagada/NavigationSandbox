@@ -1,11 +1,11 @@
 import {FC} from 'react';
 import {View} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import {Icon} from '../../components/shared/Icon';
 
 export const Tab1Screen: FC = () => {
   return (
     <View>
-      <Icon name="rocket-outline" size={30} color="#900" />
+      <Icon name="rocket" />
     </View>
   );
 };
